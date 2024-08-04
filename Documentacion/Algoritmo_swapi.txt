@@ -1,0 +1,21 @@
+1-INICIO
+2. Definir las variables y constantes necesarias, como la URL base, las funciones para obtener información, guardar diccionarios, comprobar la existencia de un diccionario en un archivo, convertir un archivo JSON a Excel, y las funciones para mostrar información de personajes, películas, naves, vehículos, especies y planetas.
+
+3. Crear una función principal `obtener_info_star_wars()` para interactuar con el usuario y permitirle elegir qué tipo de información de Star Wars desea consultar.
+
+4. En el bucle principal de `obtener_info_star_wars()`, solicitar al usuario que elija el tipo de información que desea consultar: personajes, películas, naves, vehículos, especies o planetas.
+
+5. Según la opción elegida por el usuario, solicitar el ID correspondiente (por ejemplo, ID del personaje, ID de la película, etc.).
+
+6. Llamar a la función correspondiente (`mostrar_info_personaje`, `mostrar_info_pelicula`, etc.) con el ID proporcionado por el usuario y los nombres de los archivos JSON y Excel para guardar la información.
+
+7. Dentro de cada función `mostrar_info_X`, construir la URL correspondiente utilizando la URL base y el ID proporcionado por el usuario. Luego, llamar a la función `obtener_info` para obtener la información de la API.
+
+8. Si se obtiene la información correctamente, imprimir los detalles relevantes del personaje, película, nave, vehículo, especie o planeta, y guardar la información en un archivo JSON y Excel utilizando las funciones `guardar_diccionario` y `json_to_excel`.
+
+9. Si no se puede obtener la información, mostrar un mensaje adecuado.
+
+10. Después de mostrar la información, preguntar al usuario si desea continuar consultando información. Si la respuesta es no, salir del bucle y finalizar el programa.
+
+11. En la sección `__name__ == "__main__"`, llamar a la función `obtener_info_star_wars()` para iniciar la consulta de información de Star Wars.
+12. Final 

@@ -1,0 +1,64 @@
+ALGORITMO GRAFICAS:
+opc: variable de tipo real que almacena la opcion del usuario
+Altura_graf, Masa_graf, genero_graf, iris_graf, piel_graf: Procesos que muestran graficas
+
+1.Inicio GRAFICAS
+2.mientras
+3.	mostrar  "Bienvenido a la seccion de graficas, elija el numero correspondiente a la funcion para ejecutarla:***PERSONAJES***1.Distribucion de altura(Grafica de Barras)2.Distribucion de masas		(Histograma)3.Distribucion de genero(Grafica de pastel)4.Distribucion de color de ojo(Grafica de pastel)5.Distribucion de color de piel(Grafica de pastel)6.Salir:"
+4.	leer opc
+5.	si opc es mayor o igual que 1 y menor o igual que 6
+6.		si opc es igual a 1:
+7.			ejecutar Altura_graf
+8.		si  opc es igual a 2:
+9.			ejecutar Masa_graf
+10.		si opc es igual a 3:
+11.			ejecutar genero_graf
+12.		si opc es igual a 4:
+13.			ejecutar iris_graf
+14.		si opc es igual a 5:
+15.			ejecutar piel_graf
+16.		si opc es igual a 6:
+17.			mostrar "bye bye"
+18.			fin mientras paso 2 
+19.	si no:
+20.		mostrar "dato invalido"
+21. fin GRAFICAS
+			
+ALGORITMO Altura_graf
+frequencia:arreglo de tipo entero que almacena la frequencia de cada altura
+alturas: arreglo de tipo flotante que almacena las alturas de los personajes en centimetros
+1.Inicio Altura_graf
+2.mostrar grafico de barras con las variables frequencia y alturas
+3.Fin
+
+ALGORITMO Masa_graf
+masas: arreglo de tipo flotante que contiene las masas de cada personaje en libras
+
+1.Inicio Masa_graf
+2.mostrar histograma con la variable masas	
+3.Fin Masa_graf
+
+ALGORITMO genero_graf
+etiquetas: arreglo de tipo cadena de caracter que almacena el nombre de cada genero
+cantidad: arreglo de tipo real que almacena la frequencia de cada genero
+
+1.Inicio genero_graf
+2.mostrar grafica de pastel con las variables cantidad y etiquetas
+3.Fin
+
+ALGORITMO iris_graf
+etiquetas: arreglo de tipo cadena de caracter que almacena el color de cada personaje
+cantidad: arreglo de tipo real que almacena la frequencia de cada color de ojo	
+
+1.Inicio iris_graf
+2. mostrar grafica de pastel con las variables cantidad y etiquetas
+3.Fin
+
+ALGORITMO piel_graf
+etiquetas: arreglo de tipo cadena de caracter que almacena el color de piel de cada personaje
+cantidad: arreglo de tipo real que almacena la frequencia de cada color de piel	
+
+1.Inicio piel_graf
+2.mostrar grafica de pastel con las variables cantidad y etiquetas
+3.Fin piel_graf
+	

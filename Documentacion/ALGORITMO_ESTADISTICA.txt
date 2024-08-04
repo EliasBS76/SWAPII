@@ -1,0 +1,18 @@
+1-Inicio
+2-Cargar el archivo Excel desde excel_path.
+3-Crear un DataFrame desde el archivo Excel.
+4-Calcular las estadísticas por género:
+	a. Contar la frecuencia de cada género en el DataFrame.
+	b. Calcular el porcentaje de cada género.
+	c. Imprimir las estadísticas por género.
+5-Calcular las estadísticas por color de cabello:
+	a. Contar la frecuencia de cada color de cabello en el DataFrame.
+	b. Calcular el porcentaje de cada color de cabello.
+	c. Imprimir las estadísticas por color de cabello.
+6-Calcular el porcentaje de hombres, mujeres y de cada tipo de cabello en el DataFrame:
+	a. Calcular el total de registros en el DataFrame.
+	b. Calcular el porcentaje de hombres, mujeres y cada tipo de cabello usando sum() y len() junto con el operador de comparación eq().
+Prueba del módulo:
+	a. Si el script es ejecutado como el programa principal:
+7-Llamar a la función estadisticas con la ruta al archivo Excel como argumento.
+8-Final
