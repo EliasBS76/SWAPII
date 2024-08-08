@@ -1,21 +1,18 @@
-#import sys
-#sys.path.append("C:/Users/Elias/Desktop/SWAPI_STATS/Modulos")
+
 import pandas as pd
 import requests
 import os 
 import openpyxl
 import json  
-#from swapi import obtener_info_star_wars
-#from Estadisticas import estadisticas
 from Modulos import Estadisticas,local,swapi
 from Reportes_numericos import GRAFICAS
-# Función para borrar datos de un archivo Excel
+from pathlib import Path
+directorio_usuario = Path.home()
 def borrar_datos(tipo, nombre):
     directorio_actual = os.path.dirname(__file__)
     ruta_excel = os.path.join(directorio_actual, "Reportes_numericos")
     
-    #ruta_excel = "C:/Users/Elias/Desktop/SWAPI_STATS/Reportes_numericos"
-    #ruta_excel = "/Desktop/SWAPI_STATS/Reportes_numericos"
+    
 
     ruta_excel_archivo = os.path.join(ruta_excel, f"{tipo}.xlsx")
 
@@ -39,7 +36,6 @@ while True:
     opcion = input("Selecciona una opción: ")
 
     if opcion == "1":
-        
         swapi.obtener_info_star_wars()  
     elif opcion == "2":
         print("\nARCHIVOS DISPONIBLES:")
@@ -48,7 +44,8 @@ while True:
         print("3. Películas")
         print("4. Planetas")
         opcion_archivo = input("Selecciona una opción (1/2/3/4): ")
-        ruta_excel = "C:/Users/Elias/Desktop/SWAPI_STATS/Reportes_numericos"
+        #ruta_excel = "C:/Users/Elias/Desktop/SWAPI_STATS/Reportes_numericos"
+        ruta_excel =directorio_usuario/"OneDrive"/"Desktop"/"SWAPI_STATS"/"Reportes_numericos"
         columnas_deseadas = None
         if opcion_archivo == "1":
             tipo = "personajes"
