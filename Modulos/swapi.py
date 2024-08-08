@@ -2,7 +2,8 @@ import os
 import requests
 import json
 import pandas as pd
-
+from pathlib import Path
+directorio_usuario = Path.home()
 URL_BASE = "https://swapi.py4e.com/api"
 
 def obtener_info(url):
